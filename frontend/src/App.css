@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+.App {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3c3b3b;
+  color: #f2efef;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+header {
+  border-bottom: 1px solid dodgerblue;
+  padding: 25px 25px;
+  width: 875px;
+}
+
+.set-task {
+  width: 875px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid dodgerblue;
+  padding: 25px 25px;
+  margin: 5px;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.search-field {
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field:focus {
+  outline-color: transparent;
+  outline-width: 0px;
+  box-shadow: 0px 0px 0px 1px dodgerblue inset;
+}
+
+.lrg-button {
+  border-radius: 22px;
+  font-family: "Open Sans";
+  color: #ffffff;
+  font-size: 16px;
+  background: dodgerblue;
+  padding: 10px 40px 10px 40px;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.small-button {
+    border-radius: 16px;
+    font-family: "Open Sans";
+    color: #ffffff;
+    font-size: 12px;
+    background: dodgerblue;
+    padding: 10px 20px 10px 20px;
+    margin: 2px;
+    text-decoration: none;
+}
+
+.set-task > button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f2f2f;
+  width: 875px;
+  padding: 25px;
+  margin: 5px 5px 40px 5px;
+}
+
+.active-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  border-top: 1px solid dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+  padding: 10px 20px 10px 20px;
+}
+
+.complete-block {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #00d600;
+  cursor: pointer;
+}
+
+.remove-block {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ff2c2c;
+  cursor: pointer;
+}
+
+.task-string{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.task-string > h3 {
+    margin:0px;
+}
+
+.task-string > p {
+    margin:0;
+}

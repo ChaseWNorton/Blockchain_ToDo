@@ -1,0 +1,33 @@
+{
+  "name": "blockchaintodo",
+  "version": "1.0.0",
+  "description": "ToDo List App with backend on the blockchain",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaseWNorton/Blockchain_ToDo.git"
+  },
+  "keywords": [
+    "blockchain",
+    "todo"
+  ],
+  "author": "Chase W. Norton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChaseWNorton/Blockchain_ToDo/issues"
+  },
+  "homepage": "https://github.com/ChaseWNorton/Blockchain_ToDo#readme",
+  "dependencies": {
+    "ganache-cli": "^6.1.0",
+    "mocha": "^5.2.0",
+    "solc": "^0.4.24",
+    "truffle-hdwallet-provider": "0.0.5",
+    "web3": "^1.0.0-beta.34"
+  }
+}
