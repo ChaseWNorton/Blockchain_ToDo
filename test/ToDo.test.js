@@ -21,12 +21,10 @@ describe("Todo List", async () => {
   });
 
   it("adds a todo item", async () => {
-    await toDoList.methods
-      .setTask("hello")
-      .send({
-        from: accounts[0],
-        gas: "3000000"
-      })
+    await toDoList.methods.setTask("hello").send({
+      from: accounts[0],
+      gas: "3000000"
+    });
 
     const item = await toDoList.methods.getTask(0).call();
     assert.ok(item);
